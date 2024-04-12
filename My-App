@@ -1,0 +1,833 @@
+2024-04-12T00:09:53.720-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:09:53.732-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:09:53.861-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-12T00:09:53.861-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-12T00:09:55.607-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:09:55.703-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2024-04-12T00:09:56.664-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:09:56.685-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:09:56.685-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:09:56.792-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:09:56.794-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2930 ms
+2024-04-12T00:09:57.053-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:09:57.179-07:00  INFO 10924 --- [ContactApplication] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-12T00:09:57.246-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:09:57.684-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:09:57.738-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-12T00:09:58.374-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42727e72
+2024-04-12T00:09:58.378-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-12T00:10:00.100-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:10:00.187-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:10:00.893-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:10:01.570-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:10:01.654-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:10:01.674-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 8.72 seconds (process running for 10.194)
+2024-04-12T00:10:36.338-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-12T00:10:36.339-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-12T00:10:36.343-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-04-12T00:10:37.750-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 667 ms
+2024-04-12T00:11:28.710-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:11:28.739-07:00  INFO 10924 --- [ContactApplication] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:11:28.746-07:00  INFO 10924 --- [ContactApplication] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-12T00:11:28.771-07:00  INFO 10924 --- [ContactApplication] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-12T00:11:28.927-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:11:28.928-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:11:29.324-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:11:29.338-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-04-12T00:11:29.546-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:11:29.548-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:11:29.549-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:11:29.598-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:11:29.599-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 665 ms
+2024-04-12T00:11:29.684-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:11:29.692-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:11:29.702-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:11:29.704-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-04-12T00:11:29.735-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@489a6815
+2024-04-12T00:11:29.735-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-04-12T00:11:29.816-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:11:29.840-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:11:30.170-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:11:30.498-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:11:30.532-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:11:30.560-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.693 seconds (process running for 99.08)
+2024-04-12T00:11:30.566-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:12:36.683-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-12T00:12:36.683-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-12T00:12:36.688-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-04-12T00:12:36.734-07:00  WARN 10924 --- [ContactApplication] [http-nio-9091-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('l' (code 108)): was expecting comma to separate Object entries]
+2024-04-12T00:12:55.618-07:00  WARN 10924 --- [ContactApplication] [http-nio-9091-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.ait.rest.ContactRest.SaveContact(com.ait.dto.ContactDto) with 2 errors: [Field error in object 'contactDto' on field 'name': rejected value []; codes [NotEmpty.contactDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDto.name,name]; arguments []; default message [name]]; default message [name should not be null or empty]] [Field error in object 'contactDto' on field 'email': rejected value []; codes [NotEmpty.contactDto.email,NotEmpty.email,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDto.email,email]; arguments []; default message [email]]; default message [email should not be null or empty]] ]
+2024-04-12T00:14:44.495-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-12T00:14:44.529-07:00  INFO 10924 --- [ContactApplication] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:14:44.532-07:00  INFO 10924 --- [ContactApplication] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-04-12T00:14:44.545-07:00  INFO 10924 --- [ContactApplication] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-04-12T00:14:44.714-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:14:44.717-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:14:45.115-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:14:45.132-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2024-04-12T00:14:45.337-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:14:45.339-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:14:45.339-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:14:45.380-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:14:45.381-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 660 ms
+2024-04-12T00:14:45.457-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:14:45.463-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:14:45.473-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:14:45.474-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-04-12T00:14:45.503-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a3dd48c
+2024-04-12T00:14:45.504-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-04-12T00:14:45.587-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:14:45.604-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:14:45.808-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:14:46.071-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:14:46.099-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:14:46.115-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.469 seconds (process running for 294.634)
+2024-04-12T00:14:46.118-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:18:07.920-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:18:07.942-07:00  INFO 10924 --- [ContactApplication] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:18:07.944-07:00  INFO 10924 --- [ContactApplication] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-04-12T00:18:07.952-07:00  INFO 10924 --- [ContactApplication] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-04-12T00:18:08.087-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:18:08.088-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:18:08.498-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:18:08.510-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:18:08.689-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:18:08.691-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:18:08.692-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:18:08.731-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:18:08.732-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 641 ms
+2024-04-12T00:18:08.802-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:18:08.808-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:18:08.816-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:18:08.818-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-04-12T00:18:08.851-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7eae8ead
+2024-04-12T00:18:08.851-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-04-12T00:18:08.917-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:18:08.932-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:18:09.137-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:18:09.404-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:18:09.430-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:18:09.457-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.417 seconds (process running for 497.977)
+2024-04-12T00:18:09.459-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:21:19.788-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:21:19.809-07:00  INFO 10924 --- [ContactApplication] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:21:19.811-07:00  INFO 10924 --- [ContactApplication] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-04-12T00:21:19.821-07:00  INFO 10924 --- [ContactApplication] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-04-12T00:21:19.961-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:21:19.961-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:21:20.424-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:21:20.440-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-04-12T00:21:20.668-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:21:20.669-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:21:20.671-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:21:20.721-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:21:20.722-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2024-04-12T00:21:20.792-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:21:20.798-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:21:20.807-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:21:20.809-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-04-12T00:21:20.841-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@633e40bd
+2024-04-12T00:21:20.842-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-04-12T00:21:20.926-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:21:20.942-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:21:21.189-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:21:21.512-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:21:21.539-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:21:21.561-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.651 seconds (process running for 690.081)
+2024-04-12T00:21:21.565-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:23:02.714-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:23:02.757-07:00  INFO 10924 --- [ContactApplication] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:23:02.759-07:00  INFO 10924 --- [ContactApplication] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-04-12T00:23:02.768-07:00  INFO 10924 --- [ContactApplication] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-04-12T00:23:02.903-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:23:02.904-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:23:03.278-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:23:03.291-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2024-04-12T00:23:03.474-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:23:03.475-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:23:03.475-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:23:03.514-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:23:03.514-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 607 ms
+2024-04-12T00:23:03.585-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:23:03.589-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:23:03.595-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:23:03.596-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-04-12T00:23:03.614-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6faa9a0f
+2024-04-12T00:23:03.614-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-04-12T00:23:03.667-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:23:03.682-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:23:03.873-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:23:04.137-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:23:04.165-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:23:04.188-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.331 seconds (process running for 792.708)
+2024-04-12T00:23:04.191-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:24:10.731-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:24:10.765-07:00  INFO 10924 --- [ContactApplication] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:24:10.766-07:00  INFO 10924 --- [ContactApplication] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-04-12T00:24:10.774-07:00  INFO 10924 --- [ContactApplication] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-04-12T00:24:10.908-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:24:10.908-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:24:11.335-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:24:11.347-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2024-04-12T00:24:11.568-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:24:11.570-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:24:11.570-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:24:11.608-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:24:11.609-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 697 ms
+2024-04-12T00:24:11.676-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:24:11.681-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:24:11.689-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:24:11.690-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-04-12T00:24:11.717-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7819e282
+2024-04-12T00:24:11.717-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-04-12T00:24:11.775-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:24:11.789-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:24:11.991-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:24:12.264-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:24:12.289-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:24:12.312-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.449 seconds (process running for 860.832)
+2024-04-12T00:24:12.316-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:24:29.668-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-12T00:24:29.668-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-12T00:24:29.670-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-12T00:24:29.706-07:00  WARN 10924 --- [ContactApplication] [http-nio-9091-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.ait.rest.ContactRest.SaveContact(com.ait.dto.ContactDto) with 2 errors: [Field error in object 'contactDto' on field 'name': rejected value []; codes [NotEmpty.contactDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDto.name,name]; arguments []; default message [name]]; default message [name should not be null or empty]] [Field error in object 'contactDto' on field 'email': rejected value []; codes [NotEmpty.contactDto.email,NotEmpty.email,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDto.email,email]; arguments []; default message [email]]; default message [email should not be null or empty]] ]
+2024-04-12T00:30:25.661-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:30:25.692-07:00  INFO 10924 --- [ContactApplication] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:30:25.694-07:00  INFO 10924 --- [ContactApplication] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-04-12T00:30:25.704-07:00  INFO 10924 --- [ContactApplication] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-04-12T00:30:25.840-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:30:25.840-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:30:26.201-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:30:26.212-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:30:26.393-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:30:26.395-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:30:26.395-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:30:26.435-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:30:26.435-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 592 ms
+2024-04-12T00:30:26.502-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:30:26.508-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:30:26.516-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:30:26.518-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-04-12T00:30:26.542-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bba8d10
+2024-04-12T00:30:26.542-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-04-12T00:30:26.601-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:30:26.618-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:30:26.809-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:30:27.068-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:30:27.096-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:30:27.117-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.32 seconds (process running for 1235.637)
+2024-04-12T00:30:27.121-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:32:51.232-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:32:51.254-07:00  INFO 10924 --- [ContactApplication] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:32:51.255-07:00  INFO 10924 --- [ContactApplication] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-04-12T00:32:51.272-07:00  INFO 10924 --- [ContactApplication] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-04-12T00:32:51.434-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:32:51.435-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:32:51.922-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:32:51.935-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-04-12T00:32:52.176-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:32:52.177-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:32:52.177-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:32:52.218-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:32:52.218-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 779 ms
+2024-04-12T00:32:52.298-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:32:52.305-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:32:52.313-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:32:52.315-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-04-12T00:32:52.342-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@500a9c3f
+2024-04-12T00:32:52.342-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-04-12T00:32:52.409-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:32:52.423-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:32:52.444-07:00  WARN 10924 --- [ContactApplication] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactRest': Unsatisfied dependency expressed through field 'contactService': Error creating bean with name 'contactServiceImpl' defined in file [F:\RestAPI\ContactApplication\target\classes\com\ait\serviceimpl\ContactServiceImpl.class]: Failed to instantiate [com.ait.serviceimpl.ContactServiceImpl]: Constructor threw exception
+2024-04-12T00:32:52.444-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:32:52.445-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-04-12T00:32:52.448-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-04-12T00:32:52.449-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-12T00:32:52.466-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-12T00:32:52.515-07:00 ERROR 10924 --- [ContactApplication] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactRest': Unsatisfied dependency expressed through field 'contactService': Error creating bean with name 'contactServiceImpl' defined in file [F:\RestAPI\ContactApplication\target\classes\com\ait\serviceimpl\ContactServiceImpl.class]: Failed to instantiate [com.ait.serviceimpl.ContactServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.4.jar:3.2.4]
+	at com.ait.ContactApplication.main(ContactApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.4.jar:3.2.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contactServiceImpl' defined in file [F:\RestAPI\ContactApplication\target\classes\com\ait\serviceimpl\ContactServiceImpl.class]: Failed to instantiate [com.ait.serviceimpl.ContactServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1317) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.5.jar:6.1.5]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ait.serviceimpl.ContactServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311) ~[spring-beans-6.1.5.jar:6.1.5]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	IdNotFoundException cannot be resolved to a type
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.ait.serviceimpl.ContactServiceImpl.<init>(ContactServiceImpl.java:107) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.5.jar:6.1.5]
+	... 38 common frames omitted
+
+2024-04-12T00:33:34.755-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:33:34.755-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:33:35.101-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:33:35.114-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2024-04-12T00:33:35.368-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:33:35.515-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:33:35.516-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:33:35.654-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:33:35.655-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 896 ms
+2024-04-12T00:33:35.813-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:33:35.822-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:33:35.846-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:33:35.853-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-04-12T00:33:35.878-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24707fbd
+2024-04-12T00:33:35.878-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-04-12T00:33:35.953-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:33:35.975-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:33:36.304-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:33:36.576-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:33:36.602-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:33:36.631-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.904 seconds (process running for 1425.15)
+2024-04-12T00:33:36.634-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:33:51.293-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-12T00:33:51.312-07:00  INFO 10924 --- [ContactApplication] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:33:51.313-07:00  INFO 10924 --- [ContactApplication] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-04-12T00:33:51.320-07:00  INFO 10924 --- [ContactApplication] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2024-04-12T00:33:51.458-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:33:51.458-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:33:51.842-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:33:51.855-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-04-12T00:33:52.041-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:33:52.042-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:33:52.042-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:33:52.080-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:33:52.080-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 618 ms
+2024-04-12T00:33:52.150-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:33:52.155-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:33:52.163-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:33:52.164-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-04-12T00:33:52.185-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c6b9fdb
+2024-04-12T00:33:52.185-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-04-12T00:33:52.239-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:33:52.262-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:33:52.448-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:33:52.720-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:33:52.747-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:33:52.766-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.356 seconds (process running for 1441.286)
+2024-04-12T00:33:52.769-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:34:48.092-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:34:48.112-07:00  INFO 10924 --- [ContactApplication] [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:34:48.113-07:00  INFO 10924 --- [ContactApplication] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2024-04-12T00:34:48.119-07:00  INFO 10924 --- [ContactApplication] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2024-04-12T00:34:48.257-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:34:48.257-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:34:48.629-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:34:48.641-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-04-12T00:34:48.846-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:34:48.847-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:34:48.847-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:34:48.886-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:34:48.886-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 626 ms
+2024-04-12T00:34:48.950-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:34:48.954-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:34:48.961-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:34:48.963-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2024-04-12T00:34:48.985-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49442d05
+2024-04-12T00:34:48.985-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2024-04-12T00:34:49.040-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:34:49.060-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:34:49.255-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:34:49.512-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:34:49.539-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:34:49.558-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.348 seconds (process running for 1498.078)
+2024-04-12T00:34:49.560-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:34:52.973-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:34:53.012-07:00  INFO 10924 --- [ContactApplication] [Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:34:53.013-07:00  INFO 10924 --- [ContactApplication] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2024-04-12T00:34:53.027-07:00  INFO 10924 --- [ContactApplication] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2024-04-12T00:34:53.165-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:34:53.167-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:34:53.528-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:34:53.540-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-04-12T00:34:53.728-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:34:53.729-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:34:53.729-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:34:53.771-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:34:53.771-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 602 ms
+2024-04-12T00:34:53.844-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:34:53.850-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:34:53.859-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:34:53.861-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2024-04-12T00:34:53.884-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f078f91
+2024-04-12T00:34:53.885-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2024-04-12T00:34:53.946-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:34:53.961-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:34:54.162-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:34:54.424-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:34:54.452-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:34:54.468-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.342 seconds (process running for 1502.987)
+2024-04-12T00:34:54.471-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:34:58.913-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:34:58.939-07:00  INFO 10924 --- [ContactApplication] [Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:34:58.941-07:00  INFO 10924 --- [ContactApplication] [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2024-04-12T00:34:58.951-07:00  INFO 10924 --- [ContactApplication] [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2024-04-12T00:34:59.089-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:34:59.090-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:34:59.467-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:34:59.478-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:34:59.659-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:34:59.660-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:34:59.660-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:34:59.698-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:34:59.698-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 606 ms
+2024-04-12T00:34:59.765-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:34:59.770-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:34:59.778-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:34:59.779-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2024-04-12T00:34:59.799-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5261f268
+2024-04-12T00:34:59.800-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2024-04-12T00:34:59.855-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:34:59.870-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:35:00.071-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:35:00.350-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:35:00.376-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:35:00.394-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.348 seconds (process running for 1508.914)
+2024-04-12T00:35:00.397-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:35:33.355-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:35:33.373-07:00  INFO 10924 --- [ContactApplication] [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:35:33.374-07:00  INFO 10924 --- [ContactApplication] [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2024-04-12T00:35:33.381-07:00  INFO 10924 --- [ContactApplication] [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2024-04-12T00:35:33.515-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:35:33.516-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:35:33.867-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:35:33.878-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-04-12T00:35:34.066-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:35:34.067-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:35:34.067-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:35:34.096-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:35:34.096-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 578 ms
+2024-04-12T00:35:34.156-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:35:34.161-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:35:34.168-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:35:34.169-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2024-04-12T00:35:34.192-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41015ba0
+2024-04-12T00:35:34.192-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2024-04-12T00:35:34.246-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:35:34.261-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:35:34.454-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:35:34.696-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:35:34.720-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:35:34.737-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.264 seconds (process running for 1543.257)
+2024-04-12T00:35:34.740-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:35:48.372-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:35:48.401-07:00  INFO 10924 --- [ContactApplication] [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:35:48.402-07:00  INFO 10924 --- [ContactApplication] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2024-04-12T00:35:48.410-07:00  INFO 10924 --- [ContactApplication] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2024-04-12T00:35:48.542-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:35:48.543-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:35:48.888-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:35:48.898-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:35:49.097-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:35:49.098-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:35:49.098-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:35:49.137-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:35:49.138-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 592 ms
+2024-04-12T00:35:49.210-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:35:49.216-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:35:49.225-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:35:49.227-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2024-04-12T00:35:49.251-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@339655aa
+2024-04-12T00:35:49.251-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2024-04-12T00:35:49.322-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:35:49.339-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:35:49.584-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:35:49.823-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:35:49.847-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:35:49.871-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.367 seconds (process running for 1558.391)
+2024-04-12T00:35:49.874-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:37:02.621-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:37:02.640-07:00  INFO 10924 --- [ContactApplication] [Thread-62] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:37:02.641-07:00  INFO 10924 --- [ContactApplication] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2024-04-12T00:37:02.648-07:00  INFO 10924 --- [ContactApplication] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2024-04-12T00:37:02.778-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:37:02.778-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:37:03.144-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:37:03.156-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-04-12T00:37:03.333-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:37:03.334-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:37:03.334-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:37:03.373-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:37:03.373-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 592 ms
+2024-04-12T00:37:03.438-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:37:03.442-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:37:03.450-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:37:03.451-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2024-04-12T00:37:03.473-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d2a4235
+2024-04-12T00:37:03.473-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2024-04-12T00:37:03.523-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:37:03.538-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:37:03.726-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:37:03.979-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:37:04.004-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:37:04.021-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.283 seconds (process running for 1632.541)
+2024-04-12T00:37:04.024-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:37:44.050-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-12T00:37:44.091-07:00  INFO 10924 --- [ContactApplication] [Thread-66] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:37:44.092-07:00  INFO 10924 --- [ContactApplication] [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2024-04-12T00:37:44.101-07:00  INFO 10924 --- [ContactApplication] [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2024-04-12T00:37:44.239-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:37:44.239-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:37:44.603-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:37:44.614-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:37:44.797-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:37:44.799-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:37:44.799-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:37:44.836-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:37:44.836-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
+2024-04-12T00:37:44.901-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:37:44.905-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:37:44.912-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:37:44.914-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2024-04-12T00:37:44.936-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f29a5e8
+2024-04-12T00:37:44.937-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2024-04-12T00:37:44.985-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:37:44.998-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:37:45.184-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:37:45.435-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:37:45.458-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:37:45.477-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.281 seconds (process running for 1673.997)
+2024-04-12T00:37:45.480-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:39:01.240-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:39:01.258-07:00  INFO 10924 --- [ContactApplication] [Thread-70] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:39:01.259-07:00  INFO 10924 --- [ContactApplication] [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2024-04-12T00:39:01.265-07:00  INFO 10924 --- [ContactApplication] [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2024-04-12T00:39:01.400-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:39:01.401-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:39:01.760-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:39:01.773-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-04-12T00:39:01.957-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:39:01.958-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:39:01.958-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:39:01.989-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:39:01.989-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 585 ms
+2024-04-12T00:39:02.056-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:39:02.059-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:39:02.067-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:39:02.070-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2024-04-12T00:39:02.090-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@502710df
+2024-04-12T00:39:02.091-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2024-04-12T00:39:02.142-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:39:02.153-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:39:02.337-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:39:02.585-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:39:02.612-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:39:02.633-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.272 seconds (process running for 1751.152)
+2024-04-12T00:39:02.635-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:39:18.265-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:39:18.302-07:00  INFO 10924 --- [ContactApplication] [Thread-74] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:39:18.304-07:00  INFO 10924 --- [ContactApplication] [Thread-74] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2024-04-12T00:39:18.316-07:00  INFO 10924 --- [ContactApplication] [Thread-74] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2024-04-12T00:39:18.479-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:39:18.480-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:39:18.828-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:39:18.839-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:39:19.046-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:39:19.049-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:39:19.049-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:39:19.086-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:39:19.087-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 604 ms
+2024-04-12T00:39:19.166-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:39:19.170-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:39:19.178-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:39:19.180-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2024-04-12T00:39:19.200-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-20 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63084ae7
+2024-04-12T00:39:19.201-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2024-04-12T00:39:19.253-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:39:19.265-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:39:19.439-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:39:19.697-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:39:19.722-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:39:19.739-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.307 seconds (process running for 1768.259)
+2024-04-12T00:39:19.742-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:40:06.942-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:40:06.962-07:00  INFO 10924 --- [ContactApplication] [Thread-78] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:40:06.963-07:00  INFO 10924 --- [ContactApplication] [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2024-04-12T00:40:06.969-07:00  INFO 10924 --- [ContactApplication] [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2024-04-12T00:40:07.120-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:40:07.120-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:40:07.503-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:40:07.514-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:40:07.681-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:40:07.683-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:40:07.683-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:40:07.723-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:40:07.723-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 599 ms
+2024-04-12T00:40:07.788-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:40:07.793-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:40:07.800-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:40:07.801-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2024-04-12T00:40:07.831-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46f9d649
+2024-04-12T00:40:07.832-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2024-04-12T00:40:07.885-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:40:07.896-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:40:08.094-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:40:08.410-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:40:08.438-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:40:08.456-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.382 seconds (process running for 1816.975)
+2024-04-12T00:40:08.458-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:40:21.122-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:40:21.144-07:00  INFO 10924 --- [ContactApplication] [Thread-82] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:40:21.145-07:00  INFO 10924 --- [ContactApplication] [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2024-04-12T00:40:21.153-07:00  INFO 10924 --- [ContactApplication] [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2024-04-12T00:40:21.289-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:40:21.290-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:40:21.660-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:40:21.670-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:40:21.850-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:40:21.851-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:40:21.851-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:40:21.879-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:40:21.879-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 588 ms
+2024-04-12T00:40:21.946-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:40:21.950-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:40:21.958-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:40:21.959-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2024-04-12T00:40:21.980-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b378268
+2024-04-12T00:40:21.981-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2024-04-12T00:40:22.033-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:40:22.044-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:40:22.235-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:40:22.491-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:40:22.519-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:40:22.536-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.285 seconds (process running for 1831.056)
+2024-04-12T00:40:22.539-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:41:23.973-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:41:23.992-07:00  INFO 10924 --- [ContactApplication] [Thread-86] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:41:23.992-07:00  INFO 10924 --- [ContactApplication] [Thread-86] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2024-04-12T00:41:23.998-07:00  INFO 10924 --- [ContactApplication] [Thread-86] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2024-04-12T00:41:24.162-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:41:24.162-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:41:24.578-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:41:24.589-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:41:24.791-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:41:24.792-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:41:24.792-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:41:24.832-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:41:24.833-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 667 ms
+2024-04-12T00:41:24.911-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:41:24.967-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:41:24.974-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:41:24.976-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2024-04-12T00:41:25.000-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f0ff1e5
+2024-04-12T00:41:25.000-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2024-04-12T00:41:25.055-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:41:25.068-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:41:25.357-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:41:25.646-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:41:25.673-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:41:25.691-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.588 seconds (process running for 1894.211)
+2024-04-12T00:41:25.694-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:41:38.302-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:41:38.321-07:00  INFO 10924 --- [ContactApplication] [Thread-90] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:41:38.321-07:00  INFO 10924 --- [ContactApplication] [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2024-04-12T00:41:38.327-07:00  INFO 10924 --- [ContactApplication] [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2024-04-12T00:41:38.466-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:41:38.467-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:41:38.842-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:41:38.853-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:41:39.036-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:41:39.037-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:41:39.037-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:41:39.077-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:41:39.078-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 609 ms
+2024-04-12T00:41:39.149-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:41:39.153-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:41:39.159-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:41:39.161-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2024-04-12T00:41:39.177-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-24 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46069731
+2024-04-12T00:41:39.177-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2024-04-12T00:41:39.218-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:41:39.231-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:41:39.413-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:41:39.673-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:41:39.701-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:41:39.722-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.297 seconds (process running for 1908.241)
+2024-04-12T00:41:39.725-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:42:36.567-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (1 addition, 1 deletion, 3 modifications)
+2024-04-12T00:42:36.586-07:00  INFO 10924 --- [ContactApplication] [Thread-94] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:42:36.588-07:00  INFO 10924 --- [ContactApplication] [Thread-94] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2024-04-12T00:42:36.592-07:00  INFO 10924 --- [ContactApplication] [Thread-94] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+2024-04-12T00:42:36.729-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:42:36.729-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:42:37.097-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:42:37.110-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2024-04-12T00:42:37.288-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:42:37.289-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:42:37.289-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:42:37.331-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:42:37.331-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 599 ms
+2024-04-12T00:42:37.398-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:42:37.403-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:42:37.410-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:42:37.411-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Starting...
+2024-04-12T00:42:37.435-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-25 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26284298
+2024-04-12T00:42:37.435-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Start completed.
+2024-04-12T00:42:37.483-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:42:37.494-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:42:37.666-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:42:37.918-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:42:37.944-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:42:37.963-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.271 seconds (process running for 1966.482)
+2024-04-12T00:42:37.965-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:42:41.383-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:42:41.423-07:00  INFO 10924 --- [ContactApplication] [Thread-98] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:42:41.424-07:00  INFO 10924 --- [ContactApplication] [Thread-98] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown initiated...
+2024-04-12T00:42:41.433-07:00  INFO 10924 --- [ContactApplication] [Thread-98] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown completed.
+2024-04-12T00:42:41.575-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:42:41.575-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:42:41.940-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:42:41.952-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-04-12T00:42:42.124-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:42:42.125-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:42:42.125-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:42:42.163-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:42:42.163-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 585 ms
+2024-04-12T00:42:42.229-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:42:42.233-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:42:42.241-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:42:42.243-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Starting...
+2024-04-12T00:42:42.263-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-26 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cf778a4
+2024-04-12T00:42:42.263-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Start completed.
+2024-04-12T00:42:42.312-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:42:42.321-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:42:42.497-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:42:42.747-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:42:42.776-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:42:42.792-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.256 seconds (process running for 1971.312)
+2024-04-12T00:42:42.795-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:42:59.480-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:42:59.498-07:00  INFO 10924 --- [ContactApplication] [Thread-102] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:42:59.499-07:00  INFO 10924 --- [ContactApplication] [Thread-102] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown initiated...
+2024-04-12T00:42:59.504-07:00  INFO 10924 --- [ContactApplication] [Thread-102] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown completed.
+2024-04-12T00:42:59.642-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:42:59.643-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:43:00.004-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:43:00.017-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2024-04-12T00:43:00.209-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:43:00.210-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:43:00.210-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:43:00.249-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:43:00.250-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 605 ms
+2024-04-12T00:43:00.317-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:43:00.322-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:43:00.329-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:43:00.330-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Starting...
+2024-04-12T00:43:00.354-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-27 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63c0d0a5
+2024-04-12T00:43:00.354-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Start completed.
+2024-04-12T00:43:00.403-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:43:00.413-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:43:00.607-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:43:00.868-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:43:00.893-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:43:00.907-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.304 seconds (process running for 1989.427)
+2024-04-12T00:43:00.910-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:44:29.806-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:44:29.838-07:00  INFO 10924 --- [ContactApplication] [Thread-106] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:44:29.839-07:00  INFO 10924 --- [ContactApplication] [Thread-106] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown initiated...
+2024-04-12T00:44:29.846-07:00  INFO 10924 --- [ContactApplication] [Thread-106] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown completed.
+2024-04-12T00:44:29.996-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:44:29.996-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:44:30.392-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:44:30.402-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-04-12T00:44:30.589-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:44:30.591-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:44:30.591-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:44:30.624-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:44:30.624-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 625 ms
+2024-04-12T00:44:30.668-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:44:30.673-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:44:30.681-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:44:30.683-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Starting...
+2024-04-12T00:44:30.704-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-28 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53ff3fa3
+2024-04-12T00:44:30.704-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Start completed.
+2024-04-12T00:44:30.755-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:44:30.767-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:44:30.946-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:44:31.165-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:44:31.191-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:44:31.211-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.256 seconds (process running for 2079.73)
+2024-04-12T00:44:31.213-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:44:48.917-07:00  INFO 10924 --- [ContactApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-12T00:44:48.952-07:00  INFO 10924 --- [ContactApplication] [Thread-110] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:44:48.953-07:00  INFO 10924 --- [ContactApplication] [Thread-110] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown initiated...
+2024-04-12T00:44:48.960-07:00  INFO 10924 --- [ContactApplication] [Thread-110] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown completed.
+2024-04-12T00:44:49.104-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Starting ContactApplication using Java 17.0.10 with PID 10924 (F:\RestAPI\ContactApplication\target\classes started by APPLE in F:\RestAPI\ContactApplication)
+2024-04-12T00:44:49.104-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-04-12T00:44:49.464-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-12T00:44:49.475-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-04-12T00:44:49.654-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-04-12T00:44:49.655-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-12T00:44:49.655-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-12T00:44:49.695-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-12T00:44:49.695-07:00  INFO 10924 --- [ContactApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 588 ms
+2024-04-12T00:44:49.761-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-12T00:44:49.765-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-12T00:44:49.772-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-12T00:44:49.774-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Starting...
+2024-04-12T00:44:49.796-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-29 - Added connection com.mysql.cj.jdbc.ConnectionImpl@393f677b
+2024-04-12T00:44:49.796-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Start completed.
+2024-04-12T00:44:49.844-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-12T00:44:49.854-07:00  INFO 10924 --- [ContactApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:44:50.012-07:00  WARN 10924 --- [ContactApplication] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-12T00:44:50.260-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-12T00:44:50.285-07:00  INFO 10924 --- [ContactApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-04-12T00:44:50.300-07:00  INFO 10924 --- [ContactApplication] [restartedMain] com.ait.ContactApplication               : Started ContactApplication in 1.238 seconds (process running for 2098.82)
+2024-04-12T00:44:50.303-07:00  INFO 10924 --- [ContactApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-12T00:45:27.447-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-12T00:45:27.448-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-12T00:45:27.450-07:00  INFO 10924 --- [ContactApplication] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-12T00:45:27.515-07:00  WARN 10924 --- [ContactApplication] [http-nio-9091-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.ait.exception.IdNotFoundException: Record is not found for ID: 45]
+2024-04-12T00:56:08.371-07:00  INFO 10924 --- [ContactApplication] [RMI TCP Connection(118)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-12T00:56:08.389-07:00  INFO 10924 --- [ContactApplication] [RMI TCP Connection(118)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-12T00:56:08.391-07:00  INFO 10924 --- [ContactApplication] [RMI TCP Connection(118)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown initiated...
+2024-04-12T00:56:08.397-07:00  INFO 10924 --- [ContactApplication] [RMI TCP Connection(118)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown completed.
